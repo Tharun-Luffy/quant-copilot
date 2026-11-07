@@ -1,0 +1,100 @@
+# ==============================================================================
+# Quant Copilot - Root .gitignore
+# ==============================================================================
+
+# Environment & Secrets (Preserve .env.example)
+.env
+.env*.local
+.env.production
+.env.staging
+*.pem
+*.key
+*.cert
+
+# Python & Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing & Type Checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Node.js & Next.js (apps/web)
+node_modules/
+apps/web/node_modules/
+apps/web/.next/
+apps/web/out/
+apps/web/build/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js generated files & TS build cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs & Debugging
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Database & Local Storage
+postgres_data/
+redis_data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Operating System & IDE Artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
